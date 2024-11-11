@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <!-- Define o tipo de documento como HTML5 -->
+    <meta charset="UTF-8" />
+    <!-- Define que a página será visualizada adequadamente em dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Título da página, exibido na aba do navegador -->
+    <title>HI TURISMO</title>
+    <!-- Link externo para o arquivo de estilo CSS, que define a aparência da página -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Cabeçalho da página, geralmente usado para apresentar o logo e o menu de navegação -->
+    <header>
+      <!-- Div usada para agrupar a logo e o título, facilitando o estilo com flexbox -->
+      <div class="logo">
+        <!-- Logo do site inserida com a tag <img>, que exibe uma imagem -->
+        <img src="logo.png" alt="Logo do site" />
+        <!-- Título principal do site, exibido dentro do cabeçalho -->
+        <h1>HI TURISMO</h1>
+      </div>
+      <!-- Parágrafo abaixo do título, dando uma breve descrição do site -->
+      <p>Compre suas passagens aqui</p>
+      <!-- Menu de navegação que contém uma lista de links para diferentes seções da página -->
+      <nav>
+        <ul>
+          <!-- Cada link no menu, que direciona para uma seção específica da página -->
+          <li><a href="#home">Início</a></li>
+          <li><a href="#passagens">Passagens</a></li>
+          <li><a href="#sobre">Sobre Nós</a></li>
+          <li><a href="#contato">Preços</a></li>
+        </ul>
+      </nav>
+
+      <button class="botao-header" onclick="window.location.href='cadastro.html'">Cadastro</button>
+    </header>
+
+    <!-- Conteúdo principal da página, onde informações principais são exibidas -->
+    
+    <main>
+        <section id="section1"> <!-- Conteúdo Principal -->
+            <h2>Explore os Destinos de Turismo</h2>
+            <p>Aqui você encontrará informações detalhadas sobre os melhores destinos turísticos ao redor do mundo.</p>
+            <!-- Mais conteúdo... -->
+        </section>
+    
+        <section id="section2"> <!-- Barra Lateral -->
+            <h3>Novidades</h3>
+            <ul>
+                <li><a href="#">Promoção para Paris</a></li>
+                <li><a href="#">Pacotes para o Rio de Janeiro</a></li>
+                <li><a href="#">Novos Destinos na Ásia</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Rodapé da página, com informações como direitos autorais -->
+    <footer>
+      <!-- Texto exibido no rodapé -->
+      <p>&copy; 2024 HI TURISMO - Todos os direitos reservados</p>
+      <div><a href="#">Política de Privacidade</a> | <a href="#">Termos de Uso</a></div>
+      <!-- Link para a Política de Privacidade. O atributo 'href="#"' significa que o link não leva a nenhum lugar específico -->
+    </footer>
+
+    <script>
+      function mostrarMensagem() {
+        alert("Bem-Vindo passageiro!");
+      }
+    </script>
+
+    <script src="app.js"></script>
+  </body>
+</html>
